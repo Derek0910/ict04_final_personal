@@ -1,0 +1,14 @@
+spring: 
+  application:
+    name: moduleLogis
+## db connection(oracle) - spring(context.xml)
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: springboot_ict04
+    password: tiger
+
+# http port number(default 8080)
+server.port: 8081
+
+mybatis.configuration.map-underscore-to-camel-case: false
